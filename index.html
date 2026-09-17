@@ -223,7 +223,14 @@
   }
 
   @media(max-width:900px){
-    .navlinks{display:none;}
+    .navlinks{
+      display:none; position:absolute; top:76px; left:0; right:0;
+      background:var(--bg); border-bottom:1px solid var(--line);
+      flex-direction:column; align-items:flex-start; gap:0; padding:8px 24px 20px;
+    }
+    .navlinks.mobile-open{display:flex;}
+    .navlinks a{width:100%; padding:14px 0; border-bottom:1px solid var(--line);}
+    .navlinks a.cta{width:auto; margin-top:14px; border-bottom:none; text-align:center;}
     .menu-btn{display:block;}
     .hero h1{font-size:38px;}
     .about-grid, .contact-grid{grid-template-columns:1fr;}
