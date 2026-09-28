@@ -338,11 +338,15 @@
       </div>
       <div class="contact-card">
         <h3>Send an Inquiry</h3>
-        <form onsubmit="event.preventDefault(); alert('This is a preview — connect a form service before going live.');">
-          <input type="text" placeholder="Your Name" required>
-          <input type="email" placeholder="Your Email" required>
-          <input type="text" placeholder="Company / Business Name">
-          <textarea placeholder="Tell us what you're looking for..." required></textarea>
+        <form action="https://formsubmit.co/beeta.ind@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New inquiry from qttofurniture.in">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://www.qttofurniture.in/#contact">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <input type="text" name="Company" placeholder="Company / Business Name">
+          <textarea name="Message" placeholder="Tell us what you're looking for..." required></textarea>
           <button type="submit" class="btn btn-primary">Send Inquiry</button>
         </form>
       </div>
