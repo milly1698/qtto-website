@@ -52,9 +52,10 @@
 
 <style>
   :root{
-    --bg:#faf8f4; --bg-alt:#f2efe8; --card:#ffffff; --line:#e6e1d6;
-    --text:#242220; --muted:#736e64; --accent:#b8823a; --accent-soft:#8a5f22;
-    --shadow:0 10px 30px rgba(60,50,30,.08);
+    --bg:#f8f0e6; --bg-alt:#f0e1d1; --card:#fffbf6; --line:#e6d4c1;
+    --text:#2b211d; --muted:#7d6a5f; --accent:#8c8138; --accent-soft:#635a22;
+    --plum:#6e2846; --plum-deep:#33231c; --brass-soft:#c3b56e;
+    --shadow:0 10px 30px rgba(70,45,35,.10);
   }
   *{box-sizing:border-box; margin:0; padding:0;}
   html{scroll-behavior:smooth;}
@@ -89,8 +90,8 @@
   .hero{
     position:relative; min-height:78vh; display:flex; align-items:center;
     background:
-      radial-gradient(circle at 82% 18%, rgba(90,200,190,.20), transparent 45%),
-      linear-gradient(135deg, #0b2b2c 0%, #0e3d3d 45%, #103f42 70%, #0a2426 100%);
+      radial-gradient(circle at 82% 18%, rgba(195,181,110,.16), transparent 45%),
+      linear-gradient(135deg, var(--plum) 0%, #5c1e3a 45%, var(--plum-deep) 100%);
     overflow:hidden;
   }
   .hero::before{
@@ -102,18 +103,18 @@
   .hero::after{
     content:""; position:absolute; right:-8%; top:50%; transform:translateY(-50%);
     width:520px; height:520px; border-radius:50%;
-    background:radial-gradient(circle, rgba(90,200,190,.16), transparent 70%);
+    background:radial-gradient(circle, rgba(195,181,110,.14), transparent 70%);
     pointer-events:none;
   }
   .hero .wrap{position:relative; z-index:1;}
   .hero-content{max-width:640px;}
   .eyebrow{color:var(--accent-soft); text-transform:uppercase; letter-spacing:3px; font-size:13px; font-weight:600; margin-bottom:18px;}
   .hero h1{font-size:56px; line-height:1.08; font-weight:700; margin-bottom:22px; color:#fff;}
-  .hero h1 span{color:#e9c98a;}
-  .hero .eyebrow{color:#e9c98a;}
-  .hero p{color:#e6e3dc; font-size:18px; max-width:520px; margin-bottom:34px;}
+  .hero h1 span{color:var(--brass-soft);}
+  .hero .eyebrow{color:var(--brass-soft);}
+  .hero p{color:#e9ddd6; font-size:18px; max-width:520px; margin-bottom:34px;}
   .hero .btn-outline{border:1px solid rgba(255,255,255,.4); color:#fff;}
-  .hero .btn-outline:hover{border-color:#e9c98a; color:#e9c98a;}
+  .hero .btn-outline:hover{border-color:var(--brass-soft); color:var(--brass-soft);}
   .btn-row{display:flex; gap:16px; flex-wrap:wrap;}
   .btn{
     display:inline-block; padding:15px 30px; border-radius:4px; font-weight:600; font-size:15px;
@@ -266,8 +267,8 @@
 
 <div class="stats">
   <div class="wrap">
-    <div class="stat"><div class="num">13+</div><div class="label">Product Categories</div></div>
-    <div class="stat"><div class="num">60+</div><div class="label">Designs In Catalogue</div></div>
+    <div class="stat"><div class="num">12+</div><div class="label">Product Categories</div></div>
+    <div class="stat"><div class="num">50+</div><div class="label">Designs In Catalogue</div></div>
     <div class="stat"><div class="num">3</div><div class="label">Finish Ranges</div></div>
     <div class="stat"><div class="num">100%</div><div class="label">Distributor Support</div></div>
   </div>
@@ -292,7 +293,7 @@
       <div class="eyebrow">About Us</div>
       <h2>Beeta Industries</h2>
       <p>Beeta Industries is a manufacturing, importer &amp; marketing firm of quality furniture, specialized in toughened glass furniture.</p>
-      <p>Our main products are TV stands, TV wall brackets, teapoys (coffee tables), corner and wall-side display units, dining table frames, ironing boards, cloth drying stands, stainless steel bathroom accessories, and various other utility furniture.</p>
+      <p>Our main products are TV stands, TV wall brackets, teapoys (coffee tables), corner and wall-side display units, dining table frames, ironing boards, cloth drying stands, and various other utility furniture.</p>
       <ul class="feature-list">
         <li>Wide range across Designer, Powder Coated &amp; Stainless Steel finishes</li>
         <li>Consistent stock availability for bulk &amp; repeat orders</li>

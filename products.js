@@ -71,4 +71,13 @@ const PRODUCT_CATEGORIES = [
     "GT -22 (B) ,(C).jpg",
     "Qtto 500.jpg",
   ]},
+  { key: "Bathroom_Accessories", label: "Bathroom Accessories", folder: "Bathroom Accessories", images: [
+    "QF-011.jpg",
+    "QF-014.jpg",
+    "QF-016.jpg",
+    "QF-015.jpg",
+    "QF-012.jpg",
+    "QF-004.jpg",
+    "QF-013.jpg",
+  ]},
 ];
